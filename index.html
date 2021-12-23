@@ -21,10 +21,10 @@
             <div class="column">
             <div class="content__left">
                 <div class="tabs__body">
-                    <div id="tab_01" class="tabs__block">
-                        <div class="content__left-text">14</div>
+                    <div id="tab_01" class="tabs__block now">
+                        <div class="content__left-temp">14</div>
                         <div class="content__left-cloud">
-                            <img src="img/cloud.png" alt="cloud">
+                            <img class="weather-img" src="img/cloud.png" alt="cloud">
                         </div>
                         <div class="descr">
                             <div class="descr__text">Aktobe</div>
@@ -34,63 +34,33 @@
                     <div id="tab_02" class="tabs__block">
                         <div class="title1">Aktobe</div>
                         <ul>
-                            <li>Temperature: 14</li>
-                            <li>Feels like: 10</li>
-                            <li>Weather: Clouds</li>
-                            <li>Sunrise: 03:21</li>
-                            <li>Sunset: 18:54</li>
+                            <li class="temp">Temperature: 14</li>
+                            <li class="feels">Feels like: 10</li>
+                            <li class="weather">Weather: Clouds</li>
+                            <li class="sunrise">Sunrise: 03:21</li>
+                            <li class="sunset">Sunset: 18:54</li>
                         </ul>
                     </div>
                     <div id="tab_03" class="tabs__block">
-                        <div class="title">Aktobe</div>
-                        <div class="box">
+                        <div class="title-forecast">Aktobe</div>
+                        <div class="box-forecast">
                             <div class="first">
-                                <div class="first__left">17 May</div>
-                                <div class="first__right">12:00</div>
+                                <div class="first__date">17 May</div>
+                                <div class="first__time">12:00</div>
                             </div>
                             <div class="second">
-                                <div class="second__left">
+                                <div class="second__temp">
                                     Temperature: 13
-                                    Feels like: 10
+                                   <span> Feels like: 10</span>
                                 </div>
-                                <div class="second__right">
+                                <div class="second__weather">
                                     <span>Rain</span>
                                     <img src="img/rain.png" alt="">
                                 </div>
                             </div>
                         </div>
-                        <div class="box">
-                            <div class="first">
-                                <div class="first__left">17 May</div>
-                                <div class="first__right">12:00</div>
-                            </div>
-                            <div class="second">
-                                <div class="second__left">
-                                    Temperature: 13
-                                    Feels like: 10
-                                </div>
-                                <div class="second__right">
-                                    <span>Rain</span>
-                                    <img src="img/rain.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="first">
-                                <div class="first__left">17 May</div>
-                                <div class="first__right">12:00</div>
-                            </div>
-                            <div class="second">
-                                <div class="second__left">
-                                    Temperature: 13
-                                    Feels like: 10
-                                </div>
-                                <div class="second__right">
-                                    <span>Rain</span>
-                                    <img src="img/rain.png" alt="">
-                                </div>
-                            </div>
-                        </div>
+                       
+                       
                     </div>
                 </div>
 
@@ -106,20 +76,15 @@
 
             <div class="content__right">
                 <div class="content__right-title">Added Locations</div>
-                <ul>
-                    <li>Amur</li>
-                    <li>Samara</li>
-                    <li>Bali</li>
-                    <li>Dane</li>
-                    <li>Kilo</li>
-                    <li>Nur-Sultan</li>
+                <ul class="locations">
+            
                 </ul>
             </div>
         </div>
     </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

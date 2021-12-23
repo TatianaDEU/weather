@@ -15,6 +15,12 @@ form {
     width: 100%;
     margin: 0 auto;
 }
+.location {
+    list-style: none;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    font-size: 22px;
+}
 
 .content {
     width: 600px;
@@ -22,7 +28,7 @@ form {
     border: 1px solid #000;
     background-color: #fff;
     //???
-   
+    overflow: hidden;
     margin: 0 auto;
     margin-top: 50px;
     .column {
@@ -52,13 +58,12 @@ form {
     }
 
     &__left {
-        
         display: flex;
         flex-direction: column;
         width: 300px;
         height: 389px;
         border-right: 1px solid #000;
-        &-text {
+        &-temp {
             font-size: 70px;
             font-family: "Roboto", sans-serif;
             margin-left: 30px;
@@ -83,13 +88,17 @@ form {
             }
 
             &__heart {
-                width: 22px;
-                height: 22px;
-                border: none;
                 background: transparent;
-                cursor: pointer;
+                border: none;
+                &.active {
+                    background-color: rgb(197, 25, 25);
+                }
+                .img_heart {
+                    width: 22px;
+                    height: 22px;
+                    cursor: pointer;
+                }
             }
-           
         }
         .tabs {
             &__items {
@@ -111,33 +120,29 @@ form {
                     background-color: #000;
                     color: #fff;
                 }
-              
             }
             .active {
                 background-color: #000;
                 color: #fff;
             }
-            
         }
         .tabs__body {
             height: 345px;
-            
+
             .tabs__block {
-                
                 display: none;
                 &:nth-child(3) {
                     height: 345px;
                     //overflow: hidden;
                     overflow: scroll;
-                    
                 }
                 &:target {
                     display: block;
                 }
-                .title{
+                .title {
                     font-size: 24px;
                     padding-top: 20px;
-        
+
                     padding-left: 10px;
                 }
                 .title1 {
@@ -145,6 +150,12 @@ form {
                     padding-top: 20px;
                     padding-left: 10px;
                     padding-bottom: 40px;
+                }
+                .title-forecast {
+                    font-size: 24px;
+                    padding-top: 20px;
+
+                    padding-left: 10px;
                 }
                 ul {
                     li {
@@ -154,7 +165,7 @@ form {
                         font-size: 22px;
                     }
                 }
-                .box {
+                .box-forecast {
                     border: 1px solid #000;
                     padding: 5px;
                     margin: 10px 10px 5px 10px;
@@ -162,30 +173,33 @@ form {
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 30px;
+                        &_date {
+
+                        }
+                        &_time {
+
+                        }
                     }
                     .second {
                         display: flex;
                         justify-content: space-between;
-                        &__left{
+                        &__temp {
                             flex-basis: 50%;
                         }
-                        &__right {
+                        &__weather{
                             display: flex;
                             flex-direction: column;
                         }
-
-                        
                     }
                 }
             }
-         
         }
-       
     }
 
     &__right {
         //float: right;
         width: 300px;
+        
         &-title {
             padding-top: 20px;
             padding-left: 15px;
@@ -193,15 +207,30 @@ form {
             border-bottom: 1px solid #000;
             font-size: 24px;
         }
-        ul {
+        .locations {
             padding-top: 30px;
-            li {
+            
+            .location {
+               
                 list-style: none;
                 padding-left: 10px;
                 padding-bottom: 15px;
                 font-size: 22px;
+                .delete {
+                    float: right;
+                    margin-right: 40px;
+                }
             }
         }
+        .delete {
+            width: 19px;
+            height: 19px;
+            background-image: url("../img/delete.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            border: none;
+            background-color: transparent;
+        }
     }
-
 }
