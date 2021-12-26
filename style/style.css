@@ -133,16 +133,16 @@ form {
           border: 1px solid #000;
           padding: 5px;
           margin: 10px 10px 5px 10px; }
-          .content__left .tabs__body .tabs__block .box-forecast .first {
+          .content__left .tabs__body .tabs__block .box-forecast .top {
             display: flex;
             justify-content: space-between;
             margin-bottom: 30px; }
-          .content__left .tabs__body .tabs__block .box-forecast .second {
+          .content__left .tabs__body .tabs__block .box-forecast .bottom {
             display: flex;
             justify-content: space-between; }
-            .content__left .tabs__body .tabs__block .box-forecast .second__temp {
+            .content__left .tabs__body .tabs__block .box-forecast .bottom__temp {
               flex-basis: 50%; }
-            .content__left .tabs__body .tabs__block .box-forecast .second__weather {
+            .content__left .tabs__body .tabs__block .box-forecast .bottom__weather {
               display: flex;
               flex-direction: column; }
   .content__right {
