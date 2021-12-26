@@ -104,7 +104,7 @@ function getDataHourly() {
                 document.querySelector('.cards').innerHTML += `<div class="box-forecast">
           <div class="top">
               <div class="top__date">${day} ${MONTHS[month - 1]}</div>
-              <div class="top__time">${day} ${MONTHS[month - 1]}</div>
+              <div class="top__time">${time}</div>
           </div>
           <div class="bottom">
               <div class="bottom__temp">
